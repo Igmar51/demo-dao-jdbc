@@ -43,10 +43,17 @@ public class Program {
 			 System.out.println(obj);
 		 }
 		 
-		 System.out.println("\n=== TEST3 seller findById =====");
+		 System.out.println("\n=== TEST4 Seller insert =====");
 		 Seller newSeller = new  Seller(null," Greg", "greg@gmail.com", new Date(),4000.0 ,department);						
 		 sellerDao.insert(newSeller);
 		 System.out.println("InsertId numero id; "+ newSeller.getId());
+		 
+		 System.out.println("\n=== TEST5 Seller updat =====");
+		 selle = sellerDao.findById(1);
+		 selle.setName("Maria Santos");
+		 sellerDao.update(selle);
+		 System.out.println("Update completo");
+		 
 		 
 	//	System.out.println(seller);
 		
