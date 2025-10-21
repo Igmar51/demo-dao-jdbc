@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
@@ -47,12 +48,18 @@ private static Connection conn = null;
 		
 	}
 
+	
+	public static void closeResultSet(ResultSet rs) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public static void closeStatement(ResultSet rs) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public static void closeResultSet(ResultSet rs) {
+	public static void closeStatement(PreparedStatement st) {
 		// TODO Auto-generated method stub
 		
 	}
