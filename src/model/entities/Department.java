@@ -56,5 +56,11 @@ public class Department implements Serializable{
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
+
+	public void update(Department department) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 }
